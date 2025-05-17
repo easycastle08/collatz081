@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>콜라츠 수열 시각화</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 콜라츠 수열 시각화</h1>
+
+    <form id="collatzForm">
+      <input type="number" id="numberInput" placeholder="자연수 입력" min="1" required />
+      <button type="submit">그래프 추가</button>
+      <button type="button" id="resetButton">초기화</button>
+    </form>
+
+    <div class="options">
+      <label><input type="checkbox" id="logScaleToggle" /> 로그 스케일 보기</label>
+    </div>
+
+    <div class="chart-wrapper">
+      <canvas id="collatzChart"></canvas>
+    </div>
+
+    <div id="infoContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

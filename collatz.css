@@ -1,0 +1,76 @@
+body {
+  font-family: 'Pretendard', sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.options {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #f8fafc;
+}
+
+.chart-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+canvas {
+  display: block;
+  height: 400px;
+}
+
+#infoContainer {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #fcd34d;
+  line-height: 1.6;
+}
